@@ -73,6 +73,7 @@ if __name__ == "__main__":
     movie_names = get_movies(movie_dict, ["Adventure", "Animation",
                                           "Children", "Comedy", "Fantasy",
                                           "IMAX"])
-    print("   Movies with adventure, animation, children, comedy, fantasay, and IMAX genres")
-    for movie_name in movie_names:
-        print(movie_name)
+    if len(movie_names) > 0:
+        print("   Movies with adventure, animation, children, comedy, fantasay, and IMAX genres")
+        for movie_name in movie_names:
+            print(movie_name)
